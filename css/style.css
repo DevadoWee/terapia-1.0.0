@@ -329,7 +329,7 @@
     position: relative; 
 }
 
-.header-carousel .owl-nav .owl-prev {
+/* .header-carousel .owl-nav .owl-prev {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -344,9 +344,9 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
-}
+} */
 
-.header-carousel .owl-nav .owl-next {
+/* .header-carousel .owl-nav .owl-next {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -361,7 +361,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
-}
+} */
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
@@ -452,6 +452,25 @@
 
 
 /*** Service Start ***/
+.service-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .service .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .2) ;
 }
@@ -622,7 +641,7 @@
 }
 
 .appointment .appointment-form {
-    background: rgba(239, 162, 134, 0.3);
+    background: rgba(255, 255, 255, 0);
 }
 
 .appointment .appointment-form .btn.btn-primary {

@@ -27,19 +27,41 @@
 
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
-        autoplay: true,
-        smartSpeed: 1000,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
+    $(document).ready(function(){
+        $('.header-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 800,
+            items: 1,
+            mouseDrag: true,
+            touchDrag: true,
+            pullDrag: true,
+            responsive: {
+                0: { items: 1 },
+                768: { items: 1 },
+                992: { items: 1 }
+            }
+        });
     });
+
+    // // Hero Header carousel
+    // $(".header-carousel").owlCarousel({
+    //     animateOut: 'slideOutDown',
+    //     items: 1,
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     dots: false,
+    //     loop: true,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="bi bi-arrow-left"></i>',
+    //         '<i class="bi bi-arrow-right"></i>'
+    //     ],
+    // });
 
 
     // International carousel
