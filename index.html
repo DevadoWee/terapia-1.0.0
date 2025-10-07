@@ -76,7 +76,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0">
@@ -84,8 +84,6 @@
                                 <a href="post_surgical_rehab.html" class="dropdown-item">Post-Surgical Rehabilitation</a>
                                 <a href="gemt_dry_needling.html" class="dropdown-item">GEMT Dry Needling</a>
                                 <a href="neurological_rehab.html" class="dropdown-item">Neurological Rehabilitation</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
@@ -442,55 +440,39 @@
         <div class="container-fluid appointment py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
-                        <div class="section-title text-start">
-                            <h4 class="sub-title pe-3 mb-0">Get In Touch</h4>
-                            
-                            <div class="appointment-form rounded p-5">
-                                <form>
-                                    <div class="row gy-3 gx-4">
-                                        <div class="col-xl-6">
-                                            <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="First Name">
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <input type="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email">
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                                <option selected>Your Gender</option>
-                                                <option value="1">Male</option>
-                                                <option value="2">FeMale</option>
-                                                <option value="3">Others</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <input type="date" class="form-control py-3 border-primary bg-transparent">
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                                <option selected>Department</option>
-                                                <option value="1">Physiotherapy</option>
-                                                <option value="2">Physical Helth</option>
-                                                <option value="2">Treatments</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-12">
-                                            <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
-                                        </div>
-                                    </div>
-                                </form>
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
+                    <div class="section-title text-start">
+                    <h4 class="sub-title pe-3 mb-0">Get In Touch</h4>
+
+                    <div class="appointment-form rounded p-5">
+                        <form id="contact-form">
+                        <div class="row gy-3 gx-4">
+                            <div class="col-xl-6">
+                            <input type="text" name="name" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-xl-6">
+                            <input type="email" name="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email" required>
+                            </div>
+                            <div class="col-xl-12">
+                            <input type="tel" name="phone" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Phone">
+                            </div>
+                            <div class="col-12">
+                            <textarea name="comments" class="form-control border-primary bg-transparent text-white" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                            </div>
+                            <div class="col-12">
+                            <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
                             </div>
                         </div>
+                        </form>
+                    </div>
+
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
+            </div>
+
+
         <!-- Modal Video -->
         <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -826,7 +808,9 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
+
+        <!-- Controller Javascript -->
+        <script src="index_controller.js"></script>
     </body>
 
 </html>

@@ -1170,6 +1170,12 @@
 }
 /*** Contact End ***/
 
+/*** Form End ***/
+.form-control, .form-select, textarea {
+  color: rgb(101, 101, 101) !important;
+}
+/*** Form End ***/
+
 
 /*** Footer Start ***/
 .footer {
