@@ -1,4 +1,4 @@
-// widgets/load_navbar.js
+// widgets/custom_navbar.js
 (function () {
   console.log("[Navbar] Script started"); // ✅ start marker
 
